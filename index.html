@@ -1,0 +1,57 @@
+<html manifest>
+  
+  <head>
+    
+      <head>
+        <base href="/">
+    <title>Train Tracker!!</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+<META HTTP-EQUIV="Pragma" CONTENT="no-cache">
+<META HTTP-EQUIV="Expires" CONTENT="-1">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>   
+
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>   
+<script src="node_modules/angular2/bundles/router.dev.js"></script>
+
+<script src="node_modules/angular2/bundles/http.dev.js"></script>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="x2js-master/xml2json.min.js"></script>
+
+    <!-- 2. Configure SystemJS -->
+    <script>
+      System.config({
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>
+  </head>
+
+  <!-- 3. Display the application -->
+  <body style="background-color: Black">
+    
+    <menu>Loading...</menu>
+  </body>
+</html>
